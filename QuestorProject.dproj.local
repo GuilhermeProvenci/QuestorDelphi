@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2023/01/30 21:30:00.000.308,=C:\Users\Guilherme Lima\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2023/09/15 23:46:25.000.484,=C:\Users\Guilherme Lima\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/03/09 18:43:46.000.916,=C:\Users\Guilherme Lima\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2024/08/10 13:44:26.000.149,=C:\Users\Guilherme Lima\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/02/15 20:19:27.000.573,=C:\Users\Guilherme Lima\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/09/29 21:39:16.000.577,=C:\Users\Guilherme Lima\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/10/24 15:10:50.911,=C:\Users\Guilherme Lima\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/10/24 15:22:43.250,E:\Questor\QuestorDelphi\src\presentation\nFrmMain_U.pas=C:\Users\Guilherme Lima\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2025/10/24 15:22:43.250,E:\Questor\QuestorDelphi\src\presentation\nFrmMain_U.dfm=C:\Users\Guilherme Lima\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2025/10/24 15:22:56.043,E:\Questor\QuestorDelphi\QuestorProject.dproj=C:\Users\Guilherme Lima\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
