@@ -1,7 +1,7 @@
-object Form4: TForm4
+object nFrmSqlPreview: TnFrmSqlPreview
   Left = 0
   Top = 0
-  Caption = 'Form4'
+  Caption = 'nFrmSqlPreview'
   ClientHeight = 441
   ClientWidth = 624
   Color = clBtnFace
