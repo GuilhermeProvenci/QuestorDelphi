@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{DE0BAF41-DB63-4337-B2BE-FC30573F4612}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="QuestorProject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="src\tests\QuestorProjectsTests.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="QuestorProject">
+        <MSBuild Projects="QuestorProject.dproj"/>
+    </Target>
+    <Target Name="QuestorProject:Clean">
+        <MSBuild Projects="QuestorProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="QuestorProject:Make">
+        <MSBuild Projects="QuestorProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="QuestorProjectsTests">
+        <MSBuild Projects="src\tests\QuestorProjectsTests.dproj"/>
+    </Target>
+    <Target Name="QuestorProjectsTests:Clean">
+        <MSBuild Projects="src\tests\QuestorProjectsTests.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="QuestorProjectsTests:Make">
+        <MSBuild Projects="src\tests\QuestorProjectsTests.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="QuestorProject;QuestorProjectsTests"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="QuestorProject:Clean;QuestorProjectsTests:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="QuestorProject:Make;QuestorProjectsTests:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

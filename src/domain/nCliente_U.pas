@@ -39,7 +39,7 @@ end;
 
 function TnCliente.Validar: Boolean;
 begin
-  Result := (Trim(FNome) <> '') and (Trim(FCpfCnpj) <> '');
+  Result := (Trim(FNome) <> '') and (Trim(FCpfCnpj) <> '') and ( (FCpfCnpj.Length = 11) or (FCpfCnpj.Length = 14) );
 end;
 
 function TnCliente.ObterErros: string;
@@ -51,6 +51,10 @@ begin
 
   if Trim(FCpfCnpj) = '' then
     Result := Result + 'CPF/CNPJ é obrigatório.' + sLineBreak;
+
+  if (Trim(FCpfCnpj) <> '') and ( (FCpfCnpj.Length <> 11) or  (FCpfCnpj.Length <> 14))then
+    Result := Result + 'Tamanho do CPF/CNPJ inválido.' + sLineBreak;
+
 end;
 
 end.
