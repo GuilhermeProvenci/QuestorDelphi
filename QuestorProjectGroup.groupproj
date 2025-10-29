@@ -6,7 +6,7 @@
         <Projects Include="QuestorProject.dproj">
             <Dependencies/>
         </Projects>
-        <Projects Include="src\tests\QuestorProjectsTests.dproj">
+        <Projects Include="tests\QuestorProjectsTests.dproj">
             <Dependencies/>
         </Projects>
     </ItemGroup>
@@ -27,13 +27,13 @@
         <MSBuild Projects="QuestorProject.dproj" Targets="Make"/>
     </Target>
     <Target Name="QuestorProjectsTests">
-        <MSBuild Projects="src\tests\QuestorProjectsTests.dproj"/>
+        <MSBuild Projects="tests\QuestorProjectsTests.dproj"/>
     </Target>
     <Target Name="QuestorProjectsTests:Clean">
-        <MSBuild Projects="src\tests\QuestorProjectsTests.dproj" Targets="Clean"/>
+        <MSBuild Projects="tests\QuestorProjectsTests.dproj" Targets="Clean"/>
     </Target>
     <Target Name="QuestorProjectsTests:Make">
-        <MSBuild Projects="src\tests\QuestorProjectsTests.dproj" Targets="Make"/>
+        <MSBuild Projects="tests\QuestorProjectsTests.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
         <CallTarget Targets="QuestorProject;QuestorProjectsTests"/>

@@ -13,14 +13,13 @@ uses
   DUnitX.Loggers.Xml.NUnit,
   {$ENDIF }
   DUnitX.TestFramework,
-  nDomainTests_U in 'nDomainTests_U.pas',
-  nCliente_U in '..\domain\nCliente_U.pas',
-  nPedido_U in '..\domain\nPedido_U.pas',
-  nPedidoItem_U in '..\domain\nPedidoItem_U.pas',
-  nProduto_U in '..\domain\nProduto_U.pas',
-  nSqlBuilderTests_U in 'nSqlBuilderTests_U.pas',
-  nSqlBuilder_U in '..\infrastructure\nSqlBuilder_U.pas',
-  nSqlDialeto_U in '..\infrastructure\nSqlDialeto_U.pas';
+  nDomainTests_U in 'nDomainTests_U.pas' {keep comment here to protect the following conditional from being removed by the IDE when adding a unit},
+  nCliente_U in '..\src\domain\nCliente_U.pas',
+  nPedido_U in '..\src\domain\nPedido_U.pas',
+  nPedidoItem_U in '..\src\domain\nPedidoItem_U.pas',
+  nProduto_U in '..\src\domain\nProduto_U.pas',
+  nSqlBuilder_U in '..\src\infrastructure\nSqlBuilder_U.pas',
+  nSqlDialeto_U in '..\src\infrastructure\nSqlDialeto_U.pas';
 
 { keep comment here to protect the following conditional from being removed by the IDE when adding a unit }
 {$IFNDEF TESTINSIGHT}
